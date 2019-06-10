@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:CalculoRectangulo"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBox x:Name="txtPuntoAX" HorizontalAlignment="Left" Height="23" Margin="181,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+    <Grid x:Name="frmPantallaPrincipal">
+        <TextBox x:Name="txtPuntoAX" HorizontalAlignment="Left" Height="23" Margin="109,109,0,0" TextWrapping="Wrap" Text="{Binding Path=PuntoXA}" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,7 +17,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtPuntoBX" HorizontalAlignment="Left" Height="23" Margin="181,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+        <TextBox x:Name="txtPuntoBX" HorizontalAlignment="Left" Height="23" Margin="277,110,0,0" TextWrapping="Wrap" Text="{Binding Path=PuntoXB}" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -27,7 +27,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtPuntoCX" HorizontalAlignment="Left" Height="23" Margin="181,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+        <TextBox x:Name="txtPuntoCX" HorizontalAlignment="Left" Height="23" Margin="109,153,0,0" TextWrapping="Wrap" Text="{Binding Path=PuntoXC}" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -37,7 +37,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtPuntoDX" HorizontalAlignment="Left" Height="23" Margin="181,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+        <TextBox x:Name="txtPuntoDX" HorizontalAlignment="Left" Height="23" Margin="277,153,0,0" TextWrapping="Wrap" Text="{Binding Path=PuntoXD}" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -47,10 +47,10 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <Label x:Name="lblPuntoA" Content="Punto A" HorizontalAlignment="Left" Margin="52,63,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblPuntoB" Content="Punto B" HorizontalAlignment="Left" Margin="52,107,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblPuntoC" Content="Punto C" HorizontalAlignment="Left" Margin="52,149,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblPuntoD" Content="Punto D" HorizontalAlignment="Left" Margin="52,194,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoA" Content="Punto A" HorizontalAlignment="Left" Margin="52,109,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoB" Content="Punto B" HorizontalAlignment="Left" Margin="220,110,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoC" Content="Punto C" HorizontalAlignment="Left" Margin="49,153,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoD" Content="Punto D" HorizontalAlignment="Left" Margin="217,153,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtPerimetro" HorizontalAlignment="Left" Height="23" Margin="574,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
@@ -61,7 +61,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtPuntoArea" HorizontalAlignment="Left" Height="23" Margin="574,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
+        <TextBox x:Name="txtDistanciaLado1" HorizontalAlignment="Left" Height="22" Margin="196,268,0,0" TextWrapping="Wrap" Text="{Binding Path=Lado1, Mode=TwoWay}" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -91,7 +91,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtDistancia" HorizontalAlignment="Left" Height="23" Margin="574,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
+        <TextBox x:Name="txtDistancia" HorizontalAlignment="Left" Height="23" Margin="574,205,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -104,9 +104,9 @@
         <Label x:Name="lblBase" Content="Base" HorizontalAlignment="Left" Margin="430,60,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblAltura" Content="Altura" HorizontalAlignment="Left" Margin="430,107,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lblPuntoA_Copy1" Content="Perimetro" HorizontalAlignment="Left" Margin="430,150,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblPuntoA_Copy2" Content="Distancia" HorizontalAlignment="Left" Margin="430,194,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblPuntoA_Copy3" Content="Area" HorizontalAlignment="Left" Margin="430,241,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtPuntoAY" HorizontalAlignment="Left" Height="23" Margin="229,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+        <Label x:Name="lblPuntoA_Copy2" Content="Distancia Lado 1" Margin="0,264,637,0" HorizontalAlignment="Right" Width="103" Height="26" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoA_Copy3" Content="Area" HorizontalAlignment="Left" Margin="430,202,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPuntoAY" HorizontalAlignment="Left" Height="23" Margin="157,109,0,0" TextWrapping="Wrap" Text="{Binding Path=PuntoYA}" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -116,7 +116,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtPuntoBY" HorizontalAlignment="Left" Height="23" Margin="229,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+        <TextBox x:Name="txtPuntoBY" HorizontalAlignment="Left" Height="23" Margin="325,110,0,0" TextWrapping="Wrap" Text="{Binding Path=PuntoYB}" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -126,7 +126,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtPuntoCY" HorizontalAlignment="Left" Height="23" Margin="229,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+        <TextBox x:Name="txtPuntoCY" HorizontalAlignment="Left" Height="23" Margin="157,153,0,0" TextWrapping="Wrap" Text="{Binding Path=PuntoYC}" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -136,7 +136,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtPuntoDY" HorizontalAlignment="Left" Height="23" Margin="229,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+        <TextBox x:Name="txtPuntoDY" HorizontalAlignment="Left" Height="23" Margin="325,153,0,0" TextWrapping="Wrap" Text="{Binding Path=PuntoYD}" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -146,6 +146,39 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
+        <TextBox x:Name="txtDistanciaLado2" HorizontalAlignment="Left" Height="22" Margin="196,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="lblDistanciaLado2" Content="Distancia Lado 2" Margin="0,310,637,0" HorizontalAlignment="Right" Width="103" Height="26" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDistanciaLado3" HorizontalAlignment="Left" Height="22" Margin="574,268,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="lblDistanciaLado3" Content="Distancia Lado 3" Margin="0,264,259,0" HorizontalAlignment="Right" Width="103" Height="26" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtDistanciaLado4" HorizontalAlignment="Left" Height="22" Margin="574,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="lblDistanciaLado4" Content="Distancia Lado 4" Margin="0,310,259,0" HorizontalAlignment="Right" Width="103" Height="26" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

@@ -7,6 +7,145 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="txtPuntoAX" HorizontalAlignment="Left" Height="23" Margin="181,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtPuntoBX" HorizontalAlignment="Left" Height="23" Margin="181,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtPuntoCX" HorizontalAlignment="Left" Height="23" Margin="181,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtPuntoDX" HorizontalAlignment="Left" Height="23" Margin="181,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="lblPuntoA" Content="Punto A" HorizontalAlignment="Left" Margin="52,63,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoB" Content="Punto B" HorizontalAlignment="Left" Margin="52,107,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoC" Content="Punto C" HorizontalAlignment="Left" Margin="52,149,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoD" Content="Punto D" HorizontalAlignment="Left" Margin="52,194,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPerimetro" HorizontalAlignment="Left" Height="23" Margin="574,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtPuntoArea" HorizontalAlignment="Left" Height="23" Margin="574,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtBase" HorizontalAlignment="Left" Height="23" Margin="574,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtAltura" HorizontalAlignment="Left" Height="23" Margin="574,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtDistancia" HorizontalAlignment="Left" Height="23" Margin="574,244,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="lblBase" Content="Base" HorizontalAlignment="Left" Margin="430,60,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblAltura" Content="Altura" HorizontalAlignment="Left" Margin="430,107,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoA_Copy1" Content="Perimetro" HorizontalAlignment="Left" Margin="430,150,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoA_Copy2" Content="Distancia" HorizontalAlignment="Left" Margin="430,194,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPuntoA_Copy3" Content="Area" HorizontalAlignment="Left" Margin="430,241,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPuntoAY" HorizontalAlignment="Left" Height="23" Margin="229,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtPuntoBY" HorizontalAlignment="Left" Height="23" Margin="229,107,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtPuntoCY" HorizontalAlignment="Left" Height="23" Margin="229,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="txtPuntoDY" HorizontalAlignment="Left" Height="23" Margin="229,197,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="30" RenderTransformOrigin="0.508,0.476">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0.03" Y="0.052"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
     </Grid>
 </Window>
